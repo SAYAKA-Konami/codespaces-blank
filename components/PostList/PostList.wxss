@@ -1,0 +1,6 @@
+/* component/PostList/PostList.wxss */
+.postList {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Color-White);
+}

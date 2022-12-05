@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/publish/publish",
+    "pages/login/login",
+    "pages/post/post",
+    "pages/circle/circle",
+    "pages/myPost/myPost",
+    "pages/swiperAdmin/swiperAdmin",
+    "pages/addSwiper/addSwiper",
+    "pages/collection/collection",
+    "pages/aboutUs/aboutUs",
+    "pages/signOut/signOut",
+    "pages/editProfile/editProfile"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校园论坛",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7D7E80",
+    "selectedColor": "#407EF5",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/tabs/home.png",
+        "selectedIconPath": "static/images/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "static/images/tabs/publish.png",
+        "selectedIconPath": "static/images/tabs/publish-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "static/images/tabs/me.png",
+        "selectedIconPath": "static/images/tabs/me-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

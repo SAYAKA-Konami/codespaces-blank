@@ -1,0 +1,47 @@
+<!--pages/publish/publish.wxml-->
+<view class="container">
+  <!-- 文案区 -->
+  <view class="textarea">
+    <textarea 
+      value="{{content}}"
+      auto-focus
+      auto-height 
+      bindinput="onChange"
+      placeholder="这一刻的想法..."
+      placeholder-style="font-size: 28rpx;" 
+    />
+  </view>
+
+  <!-- 上传图片/视频 -->
+  <van-uploader 
+    file-list="{{ fileList }}" 
+    bind:after-read="afterRead"
+    bind:delete="deleteFile"
+    multiple
+    accept="media"
+    max-count="9"
+    max-duration="30"
+  />
+    <!-- 文件上传前校验 -->
+    <!-- use-before-read
+    bind:before-read="beforeRead" -->
+
+  <!-- 操作 -->
+  <van-cell-group border="{{false}}">
+    <picker 
+      mode="multiSelector" 
+      bindchange="bindMultiPickerChange" 
+      bindcolumnchange="bindMultiPickerColumnChange" 
+      value="{{multiIndex}}" 
+      range="{{multiArray}}"
+    >
+      <view class="picker">
+        <van-cell size="large" title="选择圈子" value="{{multiArray[0][multiIndex[0]]}} {{multiArray[1][multiIndex[1]]}}" is-link />
+      </view>
+    </picker>
+    <van-cell size="large" title="所在位置" value="{{location}}" is-link bindtap="getLocation" />
+  </van-cell-group>
+
+  <!-- 发布 -->
+  <button class="publishBtn" bindtap="onPublish">发布</button>
+</view>

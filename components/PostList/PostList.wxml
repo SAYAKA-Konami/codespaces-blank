@@ -1,0 +1,4 @@
+<!--component/PostList/PostList.wxml-->
+<view class="postList"> 
+  <slot></slot>
+</view>

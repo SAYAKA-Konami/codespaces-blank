@@ -1,0 +1,34 @@
+<!--pages/post/post.wxml-->
+<view class="container">
+  <PostItem 
+    postItem="{{postInfo}}" 
+    isCollect="{{true}}" 
+    bind:preview="preview" 
+    bind:fabulous="fabulous" 
+    bind:collect="collect" 
+  />
+
+  <!-- 评论区 -->
+  <CommentArea
+    commentList="{{commentList}}"
+    commentSum="{{postInfo.comment}}"
+    bind:replyComment="replyComment"
+    bind:answerComment="answerComment"
+  />
+
+  <!-- 评论框 -->
+  <view class="publishComment" style="padding-bottom: {{bottomLift}}px">
+    <input 
+      class="input"
+      type="text"
+      confirm-type="send"
+      confirm-hold="{{true}}"
+      model:value="{{value}}"
+      focus="{{focus}}"
+      bindblur="onBlur"
+      placeholder="{{placeholder}}"
+      bindconfirm="hairComment"
+    />
+    <button class="hair" bindtap="hairComment">发送</button>
+  </view>
+</view>

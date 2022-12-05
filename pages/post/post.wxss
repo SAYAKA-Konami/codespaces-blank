@@ -1,0 +1,37 @@
+/* pages/post/post.wxss */
+.container {
+  width: 100vw;
+}
+.container .publishComment {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 30rpx 0;
+  background-color: var(--Color-White);
+}
+.container .publishComment .input {
+  flex: 1;
+  height: 80rpx;
+  padding: 0 30rpx;
+  line-height: 80rpx;
+  margin-bottom: 10rpx;
+  color: var(--Color-FontD);
+  border-radius: 30rpx;
+  background-color: var(--Color-FontE);
+}
+.container .publishComment .hair {
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: var(--Color-White);
+  margin-bottom: 10rpx;
+  margin-left: 20rpx;
+  border-radius: 20rpx;
+  background-color: var(--Color-MainA);
+}
+.container .publishComment .hair::after {
+  border: none;
+}

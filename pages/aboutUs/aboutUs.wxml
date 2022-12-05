@@ -1,0 +1,41 @@
+<!--pages/aboutUs/aboutUs.wxml-->
+<view class="container">
+  <BlockBox padding="20">
+    <view class="box">
+      <image class="avatar" src="{{authorInfo.avatar_url}}" />
+      <view class="name">{{authorInfo.nick_name}}</view>
+    </view>
+  </BlockBox>
+  <!-- 作者 -->
+  <BlockBox padding="20">
+    <view class="title">作者</view>
+    <view class="content">{{authorInt}}</view>
+  </BlockBox>
+  <!-- 项目介绍 -->
+  <BlockBox padding="20">
+    <view class="title">小程序介绍</view>
+    <view class="content">{{introduce}}</view>
+  </BlockBox>
+  <!-- 联系我们 -->
+  <BlockBox padding="20">
+    <view class="title">联系作者</view>
+    <view class="content">
+      <view class="email">{{email}}</view>
+      <van-icon custom-class="icon" bindtap="encourage" name="gold-coin-o" />
+    </view>
+  </BlockBox>
+
+  <!-- 打赏作者 -->
+  <van-dialog
+    use-slot
+    title="打赏作者"
+    show="{{ show }}"
+    confirmButtonText="支付"
+    show-cancel-button
+    bind:close="onClose"
+    bind:confirm="onConfirm"
+  >
+    <input class="input" focus="{{ focus }}" value="{{ amount }}" type="number" placeholder="请作者喝杯奶茶！" />
+  </van-dialog>
+
+</view>
