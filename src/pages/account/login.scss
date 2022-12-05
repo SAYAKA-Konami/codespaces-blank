@@ -1,0 +1,61 @@
+.wrapper {
+  height: 100%;
+  margin: 0;
+
+  .content {
+    min-height: calc(100vh - 160px);
+
+    .backgroundImage {
+      width: 100%;
+    }
+
+    .login-button {
+      width: 70%;
+      margin-top: 20px;
+    }
+  }
+
+  .footer {
+    height: 35px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  }
+}
+
+.list-item {
+  position: relative;
+  display: flex;
+  padding: 24px 0;
+  margin-left: 32px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(0.5);
+    transform-origin: center;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+
+  &::before {
+    top: 0;
+    bottom: auto;
+  }
+
+  &__label,
+  &__value {
+    color: #333;
+    font-size: 32px;
+    line-height: 1.5;
+  }
+
+  &__label {
+    margin-right: 16px;
+    width: 172px;
+  }
+}

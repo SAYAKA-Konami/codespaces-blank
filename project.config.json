@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "SteamCN-Mini-Program",
+  "description": "SteamCN Forum Official Mini Program",
+  "appid": "wx55a5a0eab124806d",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
