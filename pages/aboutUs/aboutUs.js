@@ -8,9 +8,9 @@ Page({
     authorInfo: {},
     show: false,
     amount: 10,
-    authorInt: '小苏同学，18届计算机专业学生',
-    introduce: '校园论坛是一个信息的港湾，它集结了许许多多的内容，为有共同爱好的同学创造了另一片交流的空间。',
-    email: '202586563@qq.com',
+    authorInt: '19级毕业生，数信学院信息管理与信息系统专业。',
+    introduce: 'M: master。意指继续深造的同学； CS: civil servant。意指投身建设祖国行业的公务员；W: work。意指就业的同学。也许你想晒出你的offer，讨论薪资或比对公司。也许你在考研，希望寻找志同道合的朋友或收集资料。也许你已经上岸，想把你的经历分享给下一届的同学们。坐一盏指路的明灯...',
+    email: 'katohuge@outlook.com',
     focus: false
   },
 
