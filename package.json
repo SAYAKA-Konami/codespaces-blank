@@ -1,9 +1,5 @@
 {
   "dependencies": {
-    "@vant/weapp": "^1.10.4",
-    "miniprogram-ci": "^1.8.35"
-  },
-  "devDependencies": {
-    "@types/wechat-miniprogram": "^3.4.1"
+    "@vant/weapp": "^1.10.4"
   }
 }
