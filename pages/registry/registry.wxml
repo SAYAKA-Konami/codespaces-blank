@@ -1,0 +1,8 @@
+<!--pages/registry/registry.wxml-->
+<view class="container">
+  <view class="submit" bindtap="registry" style="position: absolute; left: 376rpx; top: 1152rpx">
+    <text>注册</text>
+  </view>
+</view>
+
+

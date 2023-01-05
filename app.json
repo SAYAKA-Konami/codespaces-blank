@@ -12,12 +12,14 @@
     "pages/collection/collection",
     "pages/aboutUs/aboutUs",
     "pages/signOut/signOut",
-    "pages/editProfile/editProfile"
+    "pages/editProfile/editProfile",
+    "pages/offer/offer",
+    "pages/registry/registry"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "校园论坛",
+    "navigationBarBackgroundColor": "#f07c82",
+    "navigationBarTitleText": "MCSW",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -27,22 +29,28 @@
     "borderStyle": "white",
     "list": [
       {
+        "pagePath": "pages/offer/offer",
+        "text": "offer",
+        "iconPath": "static/images/tabs/offer-d.png",
+        "selectedIconPath": "static/images/tabs/offer-p.png"
+      },
+      {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "static/images/tabs/home.png",
-        "selectedIconPath": "static/images/tabs/home-active.png"
+        "text": "帖子",
+        "iconPath": "static/images/tabs/homepage-d.png",
+        "selectedIconPath": "static/images/tabs/homepage-p.png"
       },
       {
         "pagePath": "pages/publish/publish",
         "text": "发布",
-        "iconPath": "static/images/tabs/publish.png",
-        "selectedIconPath": "static/images/tabs/publish-active.png"
+        "iconPath": "static/images/tabs/plus-d.png",
+        "selectedIconPath": "static/images/tabs/plus-p.png"
       },
       {
         "pagePath": "pages/me/me",
         "text": "我的",
-        "iconPath": "static/images/tabs/me.png",
-        "selectedIconPath": "static/images/tabs/me-active.png"
+        "iconPath": "static/images/tabs/person-d.png",
+        "selectedIconPath": "static/images/tabs/person-p.png"
       }
     ]
   },

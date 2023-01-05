@@ -2,7 +2,8 @@
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: var(--Background-ImageB);
+  /* background-image: var(--Background-ImageA); */
+  background-color: #f07c82;
   position: relative;
   overflow: hidden;
 }
@@ -29,6 +30,7 @@
   width: 96rpx;
   height: 96rpx;
 }
+
 .container .login {
   width: 670rpx;
   height: 100rpx;

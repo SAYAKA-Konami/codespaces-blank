@@ -7,20 +7,27 @@ const User = db.collection('User')
 Page({
   data: {
     stateheight: app.globalData.stateheight,
-    icon: '/static/images/login/icon.png',
+    icon: '/static/images/login/six.png',
     coordinate: [
       {x: -20, y: 80},
       {x: 680, y: 150},
       {x: 300, y: 250},
       {x: -20, y: 450},
-      {x: 580, y: 540},
+      {x: 620, y: 540},
       {x: 200, y: 700},
-      {x: 450, y: 900},
-      {x: 150, y: 1100},
+      {x: 500, y: 1400},
+      {x: 50, y: 1300},
       {x: 650, y: 1200},
       {x: 180, y: 1460},
     ],
     adminOpenId: []
+  },
+
+  // 注册跳转
+  jumpToRegistry(){
+    wx.redirectTo({
+      url: '/pages/registry/registry',
+    })
   },
 
   // 登录的回调函数

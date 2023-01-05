@@ -1,8 +1,8 @@
 <!--pages/login/login.wxml-->
 <view class="container" style="padding-top: {{stateheight}}px">
   <view class="titleContent">
-    <view class="title">校坛</view>
-    <view class="subtitle">校园网络交流平台</view>
+    <view class="title">MCSW</view>
+    <view class="subtitle">为华农学子提供就业、升学的交流平台！</view>
   </view>
 
   <!-- 背景 -->
@@ -12,7 +12,12 @@
     </view>
   </view>
 
-  <view class="login" bindtap="getUserProfile">
+  <view class="login" bindtap="getUserProfile" style="position: absolute; left: 376rpx; top: 962rpx">
     <text>登录</text>
   </view>
+
+<view class="login" bindtap="jumpToRegistry" style="position: absolute; left: 376rpx; top: 1152rpx">
+    <text>注册</text>
+  </view>
+
 </view>

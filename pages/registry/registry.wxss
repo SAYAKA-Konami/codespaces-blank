@@ -1,0 +1,25 @@
+/* pages/registry/registry.wxss */
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: var(--Background-ImageA); */
+  background-color:#f07c82;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .submit{
+  width: 670rpx;
+  height: 100rpx;
+  position: absolute;
+  bottom: 100rpx;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #7a7374;
+  font-size: 38rpx;
+  line-height: 100rpx;
+  text-align: center;
+  letter-spacing: 20rpx;
+  border-radius: 50rpx;
+  background-color: var(--Color-White);
+}
